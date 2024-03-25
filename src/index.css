@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'MonaspaceKrypton';
+        src: url('/fonts/MonaspaceKryptonVarVF[wght,wdth,slnt].ttf') format('truetype'),
+        /* Certifique-se de ajustar o caminho da fonte conforme a estrutura do seu projeto */
+      }
+    @font-face {
+        font-family: 'MonaspaceArgon';
+        src: url('/fonts/MonaspaceArgonVarVF[wght,wdth,slnt].ttf') format('truetype'),
+        /* Adicione outros formatos de fonte, se necessário */
+        /* Certifique-se de ajustar o caminho da fonte conforme a estrutura do seu projeto */
+      }
+    @font-face {
+        font-family: 'MonaspaceNeon';
+        src: url('/fonts/MonaspaceNeonVarVF[wght,wdth,slnt].ttf') format('truetype'),
+        /* Adicione outros formatos de fonte, se necessário */
+        /* Certifique-se de ajustar o caminho da fonte conforme a estrutura do seu projeto */
+      }
+    @font-face {
+        font-family: 'MonaspaceXenon';
+        src: url('/fonts/MonaspaceXenonVarVF[wght,wdth,slnt].ttf') format('truetype'),
+        /* Adicione outros formatos de fonte, se necessário */
+        /* Certifique-se de ajustar o caminho da fonte conforme a estrutura do seu projeto */
+      }
+      @font-face {
+        font-family: 'MonaspaceRadon';
+        src: url('/fonts/MonaspaceRadonVarVF[wght,wdth,slnt].ttf') format('truetype'),
+        /* Adicione outros formatos de fonte, se necessário */
+        /* Certifique-se de ajustar o caminho da fonte conforme a estrutura do seu projeto */
+      }  
+
+    
+}

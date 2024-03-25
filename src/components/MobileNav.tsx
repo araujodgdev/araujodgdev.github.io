@@ -6,7 +6,7 @@ export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="md:hidden overflow-x-hidden">
+    <div className="md:hidden font-monaspace-krypton overflow-x-hidden">
       <button
         onClick={() => setOpen(!open)}
         className="flex flex-col items-center justify-center gap-[6px]"

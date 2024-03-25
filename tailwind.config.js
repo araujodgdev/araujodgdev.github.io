@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'monaspace-krypton': ['MonaspaceKrypton', 'monospace'],
+        'monaspace-argon': ['MonaspaceArgon', 'monospace'],
+        'monaspace-xenon': ['MonaspaceXenon', 'monospace'],
+        'monaspace-radon': ['MonaspaceRadon', 'monospace'],
+        'monaspace-neon': ['MonaspaceNeon', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }
