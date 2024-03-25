@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, XIcon } from "lucide-react";
 import { useState } from "react";
@@ -33,7 +34,7 @@ export default function MobileNav() {
             <nav className="relative left-10 top-16  text-2xl font-bold">
               <ul className="flex flex-col gap-3">
                 <li>
-                  <a href="/work">projetos</a>
+                  <Link to='/projects'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">projetos</Link>
                 </li>
                 <li>
                   <a href="/resume">currículo</a>

@@ -1,8 +1,11 @@
-import MobileNav from "./MobileNav";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
+import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import MobileNav from "../components/MobileNav";
 
-export default function Header() {
-  return (
-    <header className={`flex w-full items-center justify-between mb-10 gap-28`}>
+export const Route = createRootRoute({
+  component: () => (
+    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-8 py-9 text-stone-100  antialiased md:px-72 md:py-20">
+        <header className={`flex w-full items-center justify-between mb-10 gap-28`}>
       <h2
         className={`text-4xl font-monaspace-krypton font-extrabold md:text-5xl`}
       >
@@ -40,5 +43,9 @@ export default function Header() {
       </div>
       <MobileNav />
     </header>
-  );
-}
+      <Outlet />
+      <TanStackRouterDevtools position="bottom-right" />
+    </div>
+  ),
+});
+
