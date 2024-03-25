@@ -5,14 +5,6 @@ import { useState } from "react";
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setOpen(!open);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <div className="md:hidden overflow-x-hidden">
       <button
