@@ -4,7 +4,7 @@ import MobileNav from "../components/MobileNav";
 
 export const Route = createRootRoute({
   component: () => (
-    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-8 py-9 text-stone-100  antialiased md:px-72 md:py-20">
+    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-8 py-9 text-stone-100 overflow-hidden antialiased md:px-72 md:py-20">
       <header
         className={`flex w-full items-center justify-between mb-10 gap-28`}
       >
@@ -58,10 +58,17 @@ export const Route = createRootRoute({
             </div>
             <div className="flex items-center gap-2">
               <button className="w-8">
-                <a href="https://github.com/araujodgdev" target="_blank"><img src="/github-icon.svg" alt="" width={48} height={48} /></a>
+                <a href="https://github.com/araujodgdev" target="_blank">
+                  <img src="/github-icon.svg" alt="" width={48} height={48} />
+                </a>
               </button>
               <button className="w-8">
-                <a href="https://linkedin.com/in/douglasaraujodev" target="_blank"><img src="/linkedin-icon.svg" alt="" width={48} height={48} /></a>
+                <a
+                  href="https://linkedin.com/in/douglasaraujodev"
+                  target="_blank"
+                >
+                  <img src="/linkedin-icon.svg" alt="" width={48} height={48} />
+                </a>
               </button>
             </div>
           </div>
