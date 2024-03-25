@@ -33,18 +33,21 @@ export default function MobileNav() {
             </button>
             <nav className="relative left-10 top-16  text-2xl font-bold">
               <ul className="flex flex-col gap-3">
+              <li>
+                  <Link to='/'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">início</Link>
+                </li>
                 <li>
                   <Link to='/projects'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">projetos</Link>
                 </li>
                 <li>
-                  <a href="/resume">currículo</a>
+                  <Link to='/resume'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">currículo</Link>
                 </li>
                 <li>
-                  <a href="/contact">contato</a>
+                  <Link to='/contact'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">contato</Link>
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="https://github.com/araujodgdev"
                     target="_blank"
                     className="flex items-center gap-1"
                   >
@@ -53,7 +56,7 @@ export default function MobileNav() {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="https://linkedin.com/in/douglasaraujodev"
                     target="_blank"
                     className="flex items-center gap-1"
                   >
