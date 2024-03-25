@@ -4,7 +4,7 @@ import MobileNav from "../components/MobileNav";
 
 export const Route = createRootRoute({
   component: () => (
-    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-8 py-9 text-stone-100 overflow-hidden antialiased md:px-72 md:py-20">
+    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-6 py-9 text-stone-100 overflow-hidden antialiased md:px-72 md:py-20">
       <header
         className={`flex w-full items-center justify-between mb-10 gap-28`}
       >
