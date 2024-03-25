@@ -5,6 +5,14 @@ import { useState } from "react";
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="md:hidden overflow-x-hidden">
       <button
@@ -15,13 +23,13 @@ export default function MobileNav() {
         <div className="block h-1 w-8 rounded-sm bg-white"></div>
         <div className="block h-1 w-8 rounded-sm bg-white"></div>
       </button>
-      {open && (
-        <AnimatePresence>
+      <AnimatePresence>
+        {open && (
           <motion.div
             className="nav-menu absolute top-0 h-screen w-60 bg-stone-100 text-stone-950"
             initial={{ right: -256 }}
             animate={{ right: 0 }}
-            transition={{  type: "tween" }}
+            transition={{ type: "tween" }}
             exit={{ right: -256 }}
           >
             <button
@@ -62,8 +70,8 @@ export default function MobileNav() {
               </ul>
             </nav>
           </motion.div>
-        </AnimatePresence>
-      )}
+        )}
+      </AnimatePresence>
     </div>
   );
 }
