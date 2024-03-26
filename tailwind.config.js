@@ -13,6 +13,9 @@ export default {
         'monaspace-radon': ['MonaspaceRadon', 'monospace'],
         'monaspace-neon': ['MonaspaceNeon', 'monospace'],
       },
+      gridTemplateColumns: {
+        'grid-gallery': '1fr 1fr 1fr'
+      },
     },
   },
   plugins: [],
