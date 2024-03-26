@@ -14,7 +14,7 @@ export function Index() {
       <Hero />
       <AboutMe />
       <Gallery />
-      <section className="flex flex-col gap-4 md:flex-row md:gap-12">
+      <section className="flex flex-col gap-4 md:flex-row md:gap-0">
         <div className="relative -left-16">
         <SocialMediaCard href="https://github.com/araujodgdev" text="GitHub" />
         </div>
