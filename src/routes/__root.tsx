@@ -39,21 +39,6 @@ export const Route = createRootRoute({
               <div>/</div>
               <button>PT-BR</button>
             </div>
-            <div className="flex items-center gap-2">
-              <button className="w-8">
-                <a href="https://github.com/araujodgdev" target="_blank">
-                  <img src="/github-icon.svg" alt="" width={48} height={48} />
-                </a>
-              </button>
-              <button className="w-8">
-                <a
-                  href="https://linkedin.com/in/douglasaraujodev"
-                  target="_blank"
-                >
-                  <img src="/linkedin-icon.svg" alt="" width={48} height={48} />
-                </a>
-              </button>
-            </div>
           </div>
         </div>
         <MobileNav />
