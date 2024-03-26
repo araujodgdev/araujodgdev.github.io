@@ -14,7 +14,7 @@ export function Index() {
       <Hero />
       <AboutMe />
       <Gallery />
-      <div className="flex flex-col gap-4 md:flex-row md:gap-12">
+      <section className="flex flex-col gap-4 md:flex-row md:gap-12">
         <div className="relative -left-16">
         <SocialMediaCard href="https://github.com/araujodgdev" text="GitHub" />
         </div>
@@ -24,7 +24,7 @@ export function Index() {
         <div className="relative left-16">
           <SocialMediaCard href="https://www.instagram.com/_dddoug/" text="Instagram" />
         </div>
-      </div>
+      </section>
     </div>
   );
 }
