@@ -1,19 +1,18 @@
 import { createRootRoute, Outlet, Link } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import MobileNav from "../components/MobileNav";
 
 export const Route = createRootRoute({
   component: () => (
-    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-6 py-9 text-stone-100 overflow-hidden antialiased md:px-72 md:py-20">
+    <div className="flex h-screen w-screen flex-col items-center bg-stone-950 px-4 py-9 text-stone-100 overflow-hidden antialiased md:px-72 md:py-12 md:gap-20">
       <header
-        className={`flex w-full items-center justify-between mb-10 gap-28`}
+        className={`flex w-full items-center md:ml-14 justify-between mb-10 md:gap-36`}
       >
         <h2
           className={`text-4xl font-monaspace-krypton font-extrabold md:text-5xl`}
         >
           DG
         </h2>
-        <div className="hidden w-full items-center justify-between md:flex">
+        <div className="hidden w-full items-center justify-around md:flex">
           <nav>
             <ul className="flex items-center font-bold text-xs md:gap-10 md:text-sm">
               <li>
@@ -26,26 +25,10 @@ export const Route = createRootRoute({
               </li>
               <li>
                 <Link
-                  to="/projects"
-                  className="flex items-center justify-center [&.active]:bg-stone-100 [&.active]:rounded-md [&.active]:p-1 [&.active]:text-stone-950"
-                >
-                  projetos
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/resume"
                   className="flex items-center justify-center [&.active]:bg-stone-100 [&.active]:rounded-md [&.active]:p-1 [&.active]:text-stone-950"
                 >
                   currículo
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="flex items-center justify-center [&.active]:bg-stone-100 [&.active]:rounded-md [&.active]:p-1 [&.active]:text-stone-950"
-                >
-                  contato
                 </Link>
               </li>
             </ul>
@@ -76,7 +59,6 @@ export const Route = createRootRoute({
         <MobileNav />
       </header>
       <Outlet />
-      <TanStackRouterDevtools position="bottom-right" />
     </div>
   ),
 });
