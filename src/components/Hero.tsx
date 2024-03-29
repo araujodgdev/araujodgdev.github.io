@@ -20,7 +20,7 @@ export default function Hero() {
           </h1>
           <div className="flex w-full items-center justify-center gap-4 md:-right-40 md:-top-56 md:justify-center md:gap-8">
             <button className="w-40 rounded-md border-2 border-stone-100 bg-stone-100 p-3 text-xl font-bold text-stone-950 hover:scale-125 hover:duration-150">
-              <Link to="/contact">Fale comigo</Link>
+              <a href="mailto:devdoug45@gmail.com">Fale comigo</a>
             </button>
             <button className="w-40 rounded-md border-2 border-stone-100 bg-transparent p-3 text-xl font-bold text-stone-100 hover:scale-125 hover:duration-150">
               <Link to="/projects">Projetos</Link>

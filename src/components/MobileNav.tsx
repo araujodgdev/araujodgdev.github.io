@@ -36,15 +36,15 @@ export default function MobileNav() {
               <li>
                   <Link to='/'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">início</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to='/projects'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">projetos</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to='/resume'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">currículo</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to='/contact'  className="[&.active]:bg-stone-950 [&.active]:rounded-md [&.active]:p-2 [&.active]:text-stone-100">contato</Link>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://github.com/araujodgdev"
