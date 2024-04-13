@@ -6,19 +6,19 @@ export default function Gallery() {
       <div className="flex flex-col items-center justify-center gap-3">
         <CardImage src="/gallery-01.jpg" alt="" height={1920} width={1440} />
         <CardImage
-          src="/gallery-05.jpg"
+          src="/us-cesar-01.png"
           alt=""
-          height={1920}
-          width={2880}
+          height={1319}
+          width={742}
           className="md:w-[920px]"
         />
       </div>
       <div className="flex flex-col items-center justify-center gap-3">
         <CardImage
-          src="/gallery-05.jpg"
+          src="/us-cesar-01.png"
           alt=""
-          height={1920}
-          width={2880}
+          height={1319}
+          width={742}
           className="md:w-[920px]"
         />
         <CardImage src="/gallery-01.jpg" alt="" height={1920} width={1440} />
@@ -26,10 +26,10 @@ export default function Gallery() {
       <div className="flex flex-col items-center justify-center gap-3">
         <CardImage src="/gallery-01.jpg" alt="" height={1920} width={1440} />
         <CardImage
-          src="/gallery-05.jpg"
+          src="/us-cesar-01.png"
           alt=""
-          height={1920}
-          width={2880}
+          height={1319}
+          width={742}
           className="md:w-[920px]"
         />
       </div>
