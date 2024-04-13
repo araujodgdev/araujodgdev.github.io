@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        hero: ['16px', '1.5rem']
+      },
       fontFamily: {
         'monaspace-krypton': ['MonaspaceKrypton', 'monospace'],
         'monaspace-argon': ['MonaspaceArgon', 'monospace'],
