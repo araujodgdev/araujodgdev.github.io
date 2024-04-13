@@ -1,5 +1,3 @@
-import { Link } from "@tanstack/react-router";
-
 export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center gap-12 px-4">
